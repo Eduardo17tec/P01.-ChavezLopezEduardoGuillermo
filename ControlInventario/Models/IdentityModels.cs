@@ -30,5 +30,8 @@ namespace ControlInventario.Models
             return new ApplicationDbContext();
         }
 
+
+        public DbSet<Supplier> Suppliers { get; set; }
+        public DbSet<Product> Products { get; set; }
     }
 }
