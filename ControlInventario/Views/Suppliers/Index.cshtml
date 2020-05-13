@@ -34,9 +34,7 @@
         <td>
             @Html.DisplayFor(modelItem => item.SupplierCode)
         </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.SupplierName)
-        </td>
+        <th><a href="@Url.Action("ProductBySupplier","Products" , new {SupplierId = item.Id })">@item.SupplierName</a></th>
         <td>
             @Html.DisplayFor(modelItem => item.Email)
         </td>
@@ -51,6 +49,7 @@
             @Html.ActionLink("Details", "Details", new { id=item.Id }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.Id })
         </td>
+        <th><a href="@Url.Action("ProductBySupplier","Products" , new {SupplierId = item.Id })">@item.SupplierName</a></th>
     </tr>
 }
 
