@@ -255,7 +255,7 @@
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
 
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
                     @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
                     {
                         @Html.AntiForgeryToken()
@@ -264,7 +264,7 @@
                             @*<li>
                                     @Html.ActionLink("Hello " + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
                                 </li>*@
-                            <li><a href="javascript:document.getElementById('logoutForm').submit()">Log off</a></li>
+                            <li><a href="javascript:document.getElementById('logoutForm').submit()">Cerrar Sesion</a></li>
                         </ul>
                     }
                 </div>
